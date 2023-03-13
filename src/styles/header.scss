@@ -1,0 +1,45 @@
+@import '_colors';
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1120px;
+    height: 72px;
+
+    margin: 0 123px;
+
+    .logo {
+        h1 {
+            font-size: 21px;
+            font-weight: 700;
+
+            span {
+                color: $primaryColor;
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        font-size: 16;
+        font-weight: 400;
+
+        gap: 32px;
+    }
+
+    .divider {
+        content: '';
+
+        position: fixed;
+        height: 1px;
+        width: 100vw;
+        left: 0;
+        background-color: #E4E4E4;
+
+        top: 72px;
+    }
+}
