@@ -8,7 +8,8 @@ header {
     max-width: 1120px;
     height: 72px;
 
-    margin: 0 123px;
+    margin: 0 auto;
+
 
     .logo {
         h1 {
@@ -34,9 +35,9 @@ header {
     .divider {
         content: '';
 
-        position: fixed;
+        position: absolute;
         height: 1px;
-        width: 100vw;
+        width: 100%;
         left: 0;
         background-color: #E4E4E4;
 

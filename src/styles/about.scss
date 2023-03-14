@@ -1,0 +1,86 @@
+@import '_colors';
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    
+    max-width: 1366px;
+
+    margin: 0 auto;
+
+    height: 766px;
+
+    padding: 194px 121px 160px 0;
+
+    .imgContainer {
+        position: relative;
+
+        height: 412px;
+        width: 571px;
+
+        &::after {
+            content: '';
+            position: absolute;
+
+            width: 456px;
+            height: 405px;
+
+            right: 192px;
+            bottom: 41px;
+
+            border-radius: 4px;
+
+            background-color: $secondColor;
+        }
+
+        img {
+            position: relative;
+
+            height: 412px;
+            width: 571px;
+
+            border-radius: 4px;
+
+            z-index: 999;
+
+            object-fit: cover;
+        }
+    }
+
+    .textContainer {
+        width: 610px;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            
+            margin-bottom: 12px;
+            
+            color: $darkColor;
+        }
+
+        p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+
+            margin-bottom: 32px;
+
+            color: $textColor;
+        }
+    }
+
+    .gradientDivider {
+        content: '';
+
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        top: 1536px;
+    
+        background: linear-gradient(270deg, #FD4372 0%, rgba(244, 204, 223, 0.34) 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0); //inverte a direção do gradiente
+    }
+}
