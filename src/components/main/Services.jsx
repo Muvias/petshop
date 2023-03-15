@@ -4,7 +4,7 @@ import { Bone } from '@phosphor-icons/react';
 import scissors from '../../assets/icons/scissors.svg';
 import products from '../../assets/icons/products.svg';
 
-import '../../styles/service.scss';
+import '../../styles/main/service.scss';
 
 export function Services() {
     return (

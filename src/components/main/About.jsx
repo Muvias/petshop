@@ -1,4 +1,4 @@
-import '../../styles/about.scss';
+import '../../styles/main/about.scss';
 
 import equipe from '../../assets/equipe.png'
 

@@ -1,5 +1,3 @@
-import { Link, NavLink } from "react-router-dom";
-
 import '../styles/header.scss';
 
 export function Header() {
@@ -10,12 +8,12 @@ export function Header() {
             </div>
 
             <div className="menu">
-                <a href='#about'>Início</a>
+                <a href='#inicio'>Início</a>
                 <a href='#sobre'>Sobre</a>
                 <a href='#serviços'>Serviços</a>
-                <a href='#about'>Depoimentos</a>
-                <a href='#about'>Contato</a>
-                <a href='#about'>Produtos</a>
+                <a href='#depoimentos'>Depoimentos</a>
+                <a href='#contato'>Contato</a>
+                <a href='/produtos'>Produtos</a>
             </div>
 
             <div className="divider"></div>
