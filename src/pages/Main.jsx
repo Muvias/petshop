@@ -1,4 +1,5 @@
 import { About } from "../components/main/About";
+import { Contact } from "../components/main/Contact";
 import { Home } from "../components/main/Home";
 import { Services } from "../components/main/Services";
 import { Testimonials } from "../components/main/Testimonials";
@@ -13,6 +14,7 @@ export function Main() {
             <Services />
             <Testimonials />
             <div className="mainGradientDivider"></div>
+            <Contact />
         </div>
     )
 }

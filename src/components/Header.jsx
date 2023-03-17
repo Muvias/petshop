@@ -8,11 +8,11 @@ export function Header() {
             </div>
 
             <div className="menu">
-                <a href='#inicio'>Início</a>
-                <a href='#sobre'>Sobre</a>
-                <a href='#serviços'>Serviços</a>
-                <a href='#depoimentos'>Depoimentos</a>
-                <a href='#contato'>Contato</a>
+                <a href='/#inicio'>Início</a>
+                <a href='/#sobre'>Sobre</a>
+                <a href='/#serviços'>Serviços</a>
+                <a href='/#depoimentos'>Depoimentos</a>
+                <a href='/#contato'>Contato</a>
                 <a href='/produtos'>Produtos</a>
             </div>
 

@@ -1,0 +1,51 @@
+@import '_colors';
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 237px;
+
+    padding: 60px 123px;
+
+    background-color: $primaryColor;
+
+    .textContainer {
+        width: 404px;
+
+        h2 {
+            font-size: 38px;
+            font-weight: 700;
+
+            margin-bottom: 24px;
+
+            color: $darkColor;
+
+            span {
+                color: $backgroundColor;
+            }
+        }
+
+        p {
+            width: 364px;
+
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+
+            margin-bottom: 12px;
+
+            color: $backgroundColor;
+        }
+    }
+
+    .socialMedia {
+        display: flex;
+        gap: 32px;
+
+        .icon {
+            color: #fff;
+        }
+    }
+}

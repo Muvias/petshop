@@ -1,28 +1,31 @@
 @import '../_colors';
 
-.home {
+.contact {
     display: flex;
+    align-items: center;
+    justify-content: center;
 
+    gap: 268px;
 
-    gap: 118px;
+    padding: 160px 123px;
 
-    height: 699px;
-    max-width: 1366px;
-    margin: 0 auto;
+    height: 583px;
 
     .textContainer {
-        margin: 178px 0 182px 123px;
-
+        width: 404px;
+        
         h2 {
             font-size: 36px;
             font-weight: 700;
 
-            color: $darkColor;
-
             margin-bottom: 12px;
+
+            color: $darkColor;
         }
 
         p {
+            width: 364px;
+
             font-family: 'DM Sans', sans-serif;
             font-size: 18px;
             font-weight: 400;
@@ -32,14 +35,14 @@
             color: $textColor;
         }
 
-        .button {
+        a {
             display: flex;
             align-items: center;
             justify-content: center;
             
             gap: 6px;
 
-            width: 218px;
+            width: 236px;
 
             padding: 14px 32px;
 
@@ -60,37 +63,29 @@
         }
     }
 
-    .imgContainer {
-        position: relative;
+    .contactInformation {
+        display: flex;
+        flex-direction: column;
 
-        height: 375px;
-        width: 561px;
+        gap: 32px;
 
-        margin: 152px 168px 172px 0;
+        div {
+            display: flex;
+            align-items: center;
 
-        &::before {
-            content: '';
-            position: absolute;
+            gap: 12px;
 
-            width: 581px;
-            height: 405px;
+            .icon {
+                color: $primaryColor;
+            }
 
-            left: 77px;
-            bottom: 38px;
-
-            border-radius: 4px;
-
-            background-color: $secondColor;
-        }
-
-        img {
-            position: relative;
-            width: 561px;
-            height: 375px;
-
-            z-index: 999;
-            
-            border-radius: 4px;
+            p {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+    
+                color: $textColor;
+            }
         }
     }
 }

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { ChatsCircle } from '@phosphor-icons/react';
+
 import fachada from '../../assets/fachada.png'
 
 import '../../styles/main/home.scss';
@@ -12,7 +14,7 @@ export function Home() {
                     <h2>Lazer e cuidado com o seu pet</h2>
                     <p>Uma petshop exclusiva em Guarujá, especializada em levar amor e felicidade para o seu animalzinho.</p>
 
-                    <Link className="button">Agendar um horário</Link>
+                    <Link className="button"><ChatsCircle size={22} />Fale conosco</Link>
                 </div>
 
                 <div className="imgContainer">
