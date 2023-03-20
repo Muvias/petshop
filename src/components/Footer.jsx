@@ -6,16 +6,18 @@ import '../styles/footer.scss';
 export function Footer() {
     return (
         <footer>
-            <div className='textContainer'>
-                <h2>Li<span>PethyShop</span></h2>
-                <p>©2023 LiPethyshop.</p>
-                <p>Todos os direitos reservados.</p>
-            </div>
+            <div className='footerContainer'>
+                <div className='textContainer'>
+                    <h2>Li<span>PethyShop</span></h2>
+                    <p>©2023 LiPethyshop.</p>
+                    <p>Todos os direitos reservados.</p>
+                </div>
 
-            <div className='socialMedia'>
-                <Link><InstagramLogo className='icon' size={30} /></Link>
-                <Link><FacebookLogo className='icon' size={30} /></Link>
-                <Link><YoutubeLogo className='icon' size={30} /></Link>
+                <div className='socialMedia'>
+                    <Link title='Instagram'><InstagramLogo className='icon' size={30} /></Link>
+                    <Link title='Facebook'><FacebookLogo className='icon' size={30} /></Link>
+                    <Link title='Youtube'><YoutubeLogo className='icon' size={30} /></Link>
+                </div>
             </div>
         </footer>
     )

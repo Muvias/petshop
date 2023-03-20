@@ -1,51 +1,60 @@
 @import '_colors';
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     height: 237px;
 
     padding: 60px 123px;
 
     background-color: $primaryColor;
 
-    .textContainer {
-        width: 404px;
+    .footerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-        h2 {
-            font-size: 38px;
-            font-weight: 700;
+        max-width: 1120px;
+        margin: 0 auto;
 
-            margin-bottom: 24px;
+        .textContainer {
+            width: 404px;
 
-            color: $darkColor;
+            h2 {
+                font-size: 38px;
+                font-weight: 700;
 
-            span {
+                margin-bottom: 24px;
+
+                color: $darkColor;
+
+                span {
+                    color: $backgroundColor;
+                }
+            }
+
+            p {
+                width: 364px;
+
+                font-family: 'DM Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+
+                margin-bottom: 12px;
+
                 color: $backgroundColor;
             }
         }
 
-        p {
-            width: 364px;
+        .socialMedia {
+            display: flex;
+            gap: 32px;
 
-            font-family: 'DM Sans', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
+            .icon {
+                color: #fff;
 
-            margin-bottom: 12px;
-
-            color: $backgroundColor;
-        }
-    }
-
-    .socialMedia {
-        display: flex;
-        gap: 32px;
-
-        .icon {
-            color: #fff;
+                &:hover {
+                    transform: translateY(-1px);
+                }
+            }
         }
     }
 }
