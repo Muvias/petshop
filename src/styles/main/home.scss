@@ -3,12 +3,13 @@
 .home {
     display: flex;
 
-
     gap: 118px;
 
     height: 699px;
     max-width: 1366px;
     margin: 0 auto;
+
+    overflow: hidden;
 
     .textContainer {
         margin: 178px 0 182px 123px;

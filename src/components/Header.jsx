@@ -3,9 +3,9 @@ import '../styles/header.scss';
 export function Header() {
     return (
         <header>
-            <div className="logo">
+            <a href='/' className="logo">
                 <h1>Li<span>Pethy</span>shop</h1>
-            </div>
+            </a>
 
             <div className="menu">
                 <a href='/#inicio'>Início</a>

@@ -44,7 +44,8 @@
         display: flex;
         gap: 32px;
 
-        width: 1120px;
+        width: 100%;
+        max-width: 1120px;
 
         .card {
             display: flex;
