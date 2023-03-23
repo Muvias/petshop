@@ -8,7 +8,7 @@ import '../../styles/main/service.scss';
 
 export function Services() {
     return (
-        <div className="background" id='serviços'>
+        <div className="background" id='servicos'>
             <section className="services">
                 <div className="textContainer">
                     <h2>Serviços</h2>
