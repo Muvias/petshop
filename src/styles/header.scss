@@ -8,60 +8,85 @@ header {
     top: 0;
     left: 0;
 
-    padding: 0 6rem;
+    padding: 0 2rem 0 6rem;
 
     z-index: 9999;
 
     background-color: #fff;
+
     .headerContainer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
+
         max-width: 1136px;
         width: 100%;
-    
+
         height: 72px;
-    
+
         margin: 0 auto;
-    
+
         .logo {
             h1 {
                 font-size: 21px;
                 font-weight: 700;
                 font-family: "Poppins", sans-serif;
-    
+
                 span {
                     color: $primaryColor;
                 }
             }
         }
-    
+
         .menu {
             display: flex;
             align-items: center;
-    
+
             font-size: 16;
             font-weight: 400;
-    
+
             gap: 32px;
-    
+
+            @media screen and (max-width:1024px) {
+                position: fixed;
+
+                display: flex;
+                flex-direction: column;
+
+                align-items: center;
+                justify-content: center;
+
+                height: 100%;
+                width: 100%;
+
+                top: 0;
+                left: 0;
+
+                z-index: 99999;
+
+                transition: 0.8s;
+
+                transform: translateY(-100vh);
+
+                background: #fff;
+            }
+
             a {
                 position: relative;
-    
+
                 transition: .2s;
-    
+
                 &.active {
                     color: $primaryColor;
-    
+
                     font-weight: bold;
                     -webkit-font-smoothing: auto;
                 }
-    
+
                 &:hover {
                     color: $primaryColor;
                 }
-    
+
                 &::after {
                     content: "";
                     width: 0%;
@@ -77,18 +102,62 @@ header {
                 &.active::after {
                     width: 100%;
                 }
+
+                @media screen and (max-width:1024px) {
+                    color: #000;
+                    
+                    font-size: 30px;
+                    font-weight: 500;
+                }
             }
         }
-    
+
+        .navBtn {
+            padding: 5px;
+
+            visibility: hidden;
+            opacity: 0;
+
+            position: absolute;
+
+            border: none;
+
+            color: $primaryColor;
+            background: transparent;
+
+            cursor: pointer;
+
+            @media screen and (max-width:1024px) {
+                visibility: visible;
+                opacity: 1;
+
+                z-index: 9999;
+                position: initial;
+            }
+
+            &.navCloseBtn {
+                position: absolute;
+
+                top: 2rem;
+                right: 2rem;
+
+                color: #fff;
+            }
+        }
+
+        .responsiveNav {
+            transform: none;
+        }
+
         .divider {
             content: '';
-    
+
             position: absolute;
             height: 1px;
             width: 100%;
             left: 0;
             background-color: #E4E4E4;
-    
+
             top: 72px;
         }
     }

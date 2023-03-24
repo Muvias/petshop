@@ -61,6 +61,10 @@
 
                 scroll-snap-align: start;
 
+                @media screen and (max-width:1024px) {
+                    scroll-snap-align: center;
+                }
+
                 p {
                     width: 440px;
 
