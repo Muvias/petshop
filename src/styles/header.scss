@@ -1,69 +1,95 @@
 @import '_colors';
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: fixed;
 
-    max-width: 1160px;
     width: 100%;
-    height: 72px;
 
-    padding: 0 20px;
+    top: 0;
+    left: 0;
 
-    margin: 0 auto;
+    padding: 0 6rem;
 
-    .logo {
-        h1 {
-            font-size: 21px;
-            font-weight: 700;
-            font-family: "Poppins", sans-serif;
+    z-index: 9999;
 
-            span {
-                color: $primaryColor;
-            }
-        }
-    }
-
-    .menu {
+    background-color: #fff;
+    .headerContainer {
         display: flex;
         align-items: center;
-
-        font-size: 16;
-        font-weight: 400;
-
-        gap: 32px;
-
-        a {
-            position: relative;
-
-            &::after {
-                content: "";
-                width: 0%;
-                height: 2px;
-                background: $primaryColor;
-                position: absolute;
-                left: 0;
-                bottom: -6px;
-                transition: width 0.2s;
+        justify-content: space-between;
+    
+        max-width: 1136px;
+        width: 100%;
+    
+        height: 72px;
+    
+        margin: 0 auto;
+    
+        .logo {
+            h1 {
+                font-size: 21px;
+                font-weight: 700;
+                font-family: "Poppins", sans-serif;
+    
+                span {
+                    color: $primaryColor;
+                }
             }
         }
+    
+        .menu {
+            display: flex;
+            align-items: center;
+    
+            font-size: 16;
+            font-weight: 400;
+    
+            gap: 32px;
+    
+            a {
+                position: relative;
+    
+                transition: .2s;
+    
+                &.active {
+                    color: $primaryColor;
+    
+                    font-weight: bold;
+                    -webkit-font-smoothing: auto;
+                }
+    
+                &:hover {
+                    color: $primaryColor;
+                }
+    
+                &::after {
+                    content: "";
+                    width: 0%;
+                    height: 2px;
+                    background: $primaryColor;
+                    position: absolute;
+                    left: 0;
+                    bottom: -6px;
+                    transition: width 0.2s;
+                }
 
-        a:hover::after,
-        a.active::after {
-            width: 100%;
+                &:hover::after,
+                &.active::after {
+                    width: 100%;
+                }
+            }
         }
-    }
-
-    .divider {
-        content: '';
-
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        left: 0;
-        background-color: #E4E4E4;
-
-        top: 72px;
+    
+        .divider {
+            content: '';
+    
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            left: 0;
+            background-color: #E4E4E4;
+    
+            top: 72px;
+        }
     }
 }
