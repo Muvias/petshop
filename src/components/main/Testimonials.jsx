@@ -1,7 +1,7 @@
 import { CaretLeft, CaretRight } from '@phosphor-icons/react';
 import { useRef } from 'react';
 
-import  userPhoto from '../../assets/userPhoto.png';
+import userPhoto from '../../assets/userPhoto.png';
 
 import '../../styles/main/testimonials.scss';
 
@@ -59,16 +59,20 @@ export function Testimonials() {
                         </div>
                     </div>
                 </div>
+
+                <div className='arrows'>
+                    <button onClick={handleClickLeftArrow} className="arrowLeft">
+                        <CaretLeft size={30} weight='bold' />
+                    </button>
+                    <button onClick={handleClickRightArrow} className="arrowRight">
+                        <CaretRight size={30} weight='bold' />
+                    </button>
+                </div>
             </div>
 
-            <div className='arrows'>
-                <button onClick={handleClickLeftArrow} className="arrowLeft">
-                    <CaretLeft size={30} weight='bold' />
-                </button>
-                <button onClick={handleClickRightArrow} className="arrowRight">
-                    <CaretRight size={30} weight='bold' />
-                </button>
-            </div>
+
+
+            <div className="gradientDivider"></div>
         </section>
     )
 }

@@ -1,8 +1,7 @@
 @import '../_colors';
 
 .testimonials {
-    max-width: 1366px;
-    height: 826px;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -10,12 +9,17 @@
 
     gap: 64px;
 
+    height: 826px;
+
     padding: 160px 123px;
 
     margin: 0 auto;
 
-    position: relative;
+    @media screen and (max-width:475px) {
+        height: 100%;
 
+        padding: 80px 24px;
+    }
 
     h2 {
         text-align: center;
@@ -26,12 +30,23 @@
         font-weight: 700;
 
         color: $darkColor;
+
+        @media screen and (max-width:1024px) {
+            width: 100%;
+
+            text-align: start;
+
+            font-size: 30px;
+        }
     }
 
     .carouselContainer {
+        position: relative;
+
         width: 100%;
         max-width: 1120px;
         margin: 0 auto;
+
 
         .carousel {
             display: flex;
@@ -61,8 +76,10 @@
 
                 scroll-snap-align: start;
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:475px) {
                     scroll-snap-align: center;
+
+                    padding: 32px;
                 }
 
                 p {
@@ -75,6 +92,10 @@
                     margin-bottom: 24px;
 
                     color: $darkColor;
+
+                    @media screen and (max-width:475px) {
+                        width: 263px;
+                    }
 
                     span {
                         font-size: 18px;
@@ -101,32 +122,62 @@
                 }
             }
         }
-    }
 
-    .arrows {
-        button {
-            position: absolute;
+        .arrows {
+            @media screen and (max-width:475px) {
+                display: flex;
+                justify-content: center;
 
-            top: 55%;
+                gap: 10px;
 
-            cursor: pointer;
+                margin-top: 8px;
+            }
 
-            border: none;
+            button {
+                position: absolute;
 
-            color: $primaryColor;
-            background-color: transparent;
+                top: 45%;
 
-            &:active {
-                transform: scale(1.03);
+                cursor: pointer;
+
+                border: none;
+
+                color: $primaryColor;
+                background-color: transparent;
+
+                @media screen and (max-width:475px) {
+                    position: initial;
+                }
+
+                &:active {
+                    transform: scale(1.03);
+                }
+            }
+
+            .arrowLeft {
+                left: -50px;
+            }
+
+            .arrowRight {
+                right: -50px;
             }
         }
+    }
 
-        .arrowLeft {
-            left: 50px;
-        }
+    .gradientDivider {
+        content: '';
 
-        .arrowRight {
-            right: 50px;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: 0px;
+
+        background: linear-gradient(270deg, #FD4372 0%, rgba(244, 204, 223, 0.34) 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0); //inverte a direção do gradiente
+
+        @media screen and (max-width:475px) {
+            bottom: 0px;
         }
     }
 }

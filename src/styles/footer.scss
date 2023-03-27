@@ -7,6 +7,10 @@ footer {
 
     background-color: $primaryColor;
 
+    @media screen and (max-width:1024px) {
+        padding: 0;
+    }
+
     .footerContainer {
         display: flex;
         align-items: center;
@@ -15,8 +19,16 @@ footer {
         max-width: 1120px;
         margin: 0 auto;
 
+        @media screen and (max-width:1024px) {
+            flex-direction: column;
+        }
+
         .textContainer {
             width: 404px;
+
+            @media screen and (max-width:1024px) {
+                width: 100%;
+            }
 
             h2 {
                 font-size: 38px;

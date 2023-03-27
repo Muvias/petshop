@@ -14,6 +14,10 @@ header {
 
     background-color: #fff;
 
+    @media screen and (max-width:475px) {
+        padding: 0 24px;
+    }
+
     .headerContainer {
         display: flex;
         align-items: center;
@@ -141,7 +145,7 @@ header {
                 top: 2rem;
                 right: 2rem;
 
-                color: #fff;
+                color: $primaryColor;
             }
         }
 

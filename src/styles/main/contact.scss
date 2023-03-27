@@ -11,8 +11,21 @@
 
     height: 583px;
 
+    @media screen and (max-width:1024px) {
+        flex-direction: column;
+
+        padding: 0;
+        gap: 0;
+
+        height: 100%;
+    }
+
     .textContainer {
         width: 404px;
+
+        @media screen and (max-width:1024px) {
+            width: 100%;
+        }
         
         h2 {
             font-size: 36px;

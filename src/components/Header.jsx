@@ -22,7 +22,7 @@ export function Header() {
     return (
         <header>
             <div className='headerContainer'>
-                <a href='/' className="logo">
+                <a href='#' className="logo">
                     <h1>Li<span>Pethy</span>shop</h1>
                 </a>
 

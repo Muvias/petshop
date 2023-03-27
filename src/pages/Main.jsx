@@ -13,7 +13,6 @@ export function Main() {
             <About />
             <Services />
             <Testimonials />
-            <div className="mainGradientDivider"></div>
             <Contact />
         </div>
     )

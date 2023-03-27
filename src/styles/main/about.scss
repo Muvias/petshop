@@ -1,86 +1,134 @@
 @import '../_colors';
 
-.about {
-    display: flex;
-    justify-content: space-between;
-    gap: 64px;
-    
-    max-width: 1366px;
+.aboutContainer {
+    position: relative;
 
-    margin: 0 auto;
+    .about {
+        display: flex;
+        justify-content: space-between;
+        gap: 64px;
 
-    height: 766px;
+        max-width: 1366px;
 
-    padding: 194px 121px 160px 0;
+        margin: 0 auto;
 
-    .imgContainer {
-        position: relative;
+        height: 766px;
 
-        height: 412px;
-        width: 571px;
+        padding: 194px 121px 160px 0;
 
-        &::after {
-            content: '';
-            position: absolute;
 
-            width: 456px;
-            height: 405px;
+        @media screen and (max-width:475px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-            right: 192px;
-            bottom: 41px;
+            height: 100%;
 
-            border-radius: 4px;
+            gap: 32px;
 
-            background-color: $secondColor;
+            padding: 80px 0;
+            margin: 0;
         }
 
-        img {
+        .imgContainer {
             position: relative;
 
             height: 412px;
             width: 571px;
 
-            border-radius: 4px;
+            @media screen and (max-width:475px) {
+                height: auto;
+                width: 100%;
 
-            z-index: 999;
+                margin-top: 20px;
+            }
 
-            object-fit: cover;
+            &::after {
+                content: '';
+                position: absolute;
+
+                width: 456px;
+                height: 405px;
+
+                right: 192px;
+                bottom: 41px;
+
+                border-radius: 4px;
+
+                background-color: $secondColor;
+
+                @media screen and (max-width:475px) {
+                    height: 100%;
+                    width: 100%;
+
+                    right: 120px;
+                    bottom: 25px;
+                }
+            }
+
+            img {
+                position: relative;
+
+                height: 412px;
+                width: 571px;
+
+                border-radius: 4px;
+
+                z-index: 999;
+
+                object-fit: cover;
+
+                @media screen and (max-width:475px) {
+                    height: auto;
+                    width: 100%;
+                }
+            }
         }
-    }
 
-    .textContainer {
-        width: 610px;
+        .textContainer {
+            width: 610px;
 
-        h2 {
-            font-size: 36px;
-            font-weight: 700;
-            
-            margin-bottom: 12px;
-            
-            color: $darkColor;
+            @media screen and (max-width:475px) {
+                width: 100%;
+
+                padding: 0 24px;
+            }
+
+            h2 {
+                font-size: 36px;
+                font-weight: 700;
+
+                margin-bottom: 12px;
+
+                color: $darkColor;
+
+                @media screen and (max-width:475px) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+
+                margin-bottom: 32px;
+
+                color: $textColor;
+            }
         }
 
-        p {
-            font-family: 'DM Sans', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
+        .gradientDivider {
+            content: '';
 
-            margin-bottom: 32px;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            left: 0;
+            bottom: 0px;
 
-            color: $textColor;
+            background: linear-gradient(270deg, #FD4372 0%, rgba(244, 204, 223, 0.34) 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0); //inverte a direção do gradiente
         }
-    }
-
-    .gradientDivider {
-        content: '';
-
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        left: 0;
-        top: 1536px;
-    
-        background: linear-gradient(270deg, #FD4372 0%, rgba(244, 204, 223, 0.34) 100%);
-        transform: matrix(-1, 0, 0, 1, 0, 0); //inverte a direção do gradiente
     }
 }
