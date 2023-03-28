@@ -11,7 +11,7 @@ export function Contact() {
                 <div className='textContainer'>
                     <h2>Entre em contato com a gente!</h2>
                     <p>Entre em contato com a LiPethyShop, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
-                    <Link className="button"><WhatsappLogo size={24} />Entrar em contato</Link>
+                    <Link to="https://api.whatsapp.com/send?phone=+5511956561710&text=Olá! gostaria de falar com vocês." target="_blank" className="button"><WhatsappLogo size={24} />Entrar em contato</Link>
                 </div>
 
                 <div className='contactInformation'>

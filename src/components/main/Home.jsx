@@ -14,7 +14,7 @@ export function Home() {
                     <h2>Lazer e cuidado com o seu pet</h2>
                     <p>Uma petshop exclusiva em Guarujá, especializada em levar amor e felicidade para o seu animalzinho.</p>
 
-                    <Link className="button"><ChatsCircle size={22} />Fale conosco</Link>
+                    <Link to="https://api.whatsapp.com/send?phone=+5511956561710&text=Olá! gostaria de marcar um horário, vocês teriam disponibilidade para quando?" target="_blank" className="button"><ChatsCircle size={22} />Fale conosco</Link>
                 </div>
 
                 <div className="imgContainer">

@@ -15,7 +15,7 @@
 
     margin: 0 auto;
 
-    @media screen and (max-width:475px) {
+    @media screen and (max-width:1024px) {
         height: 100%;
 
         padding: 80px 24px;
@@ -76,7 +76,7 @@
 
                 scroll-snap-align: start;
 
-                @media screen and (max-width:475px) {
+                @media screen and (max-width:1024px) {
                     scroll-snap-align: center;
 
                     padding: 32px;
@@ -93,7 +93,7 @@
 
                     color: $darkColor;
 
-                    @media screen and (max-width:475px) {
+                    @media screen and (max-width:1024px) {
                         width: 263px;
                     }
 
@@ -124,7 +124,7 @@
         }
 
         .arrows {
-            @media screen and (max-width:475px) {
+            @media screen and (max-width:1024px) {
                 display: flex;
                 justify-content: center;
 
@@ -145,7 +145,7 @@
                 color: $primaryColor;
                 background-color: transparent;
 
-                @media screen and (max-width:475px) {
+                @media screen and (max-width:1024px) {
                     position: initial;
                 }
 
@@ -176,7 +176,7 @@
         background: linear-gradient(270deg, #FD4372 0%, rgba(244, 204, 223, 0.34) 100%);
         transform: matrix(-1, 0, 0, 1, 0, 0); //inverte a direção do gradiente
 
-        @media screen and (max-width:475px) {
+        @media screen and (max-width:1024px) {
             bottom: 0px;
         }
     }

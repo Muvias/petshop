@@ -15,13 +15,13 @@ export function About() {
 
                     <div className='paragraphs'>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin quis bibendum diam. Sed consequat nisl laoreet eros ultricies pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula risus.
+                            Somos uma petshop localizada em Guarujá que se dedica ao cuidado e bem-estar dos animais de estimação. Oferecemos uma ampla gama de serviços, desde banho, tosa, venda de alimentos e acessórios. Nossa equipe é composta por profissionais experientes e apaixonados por animais, que se esforçam para oferecer um atendimento personalizado e de alta qualidade para cada cliente.
                         </p>
                         <p>
-                            In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec luctus, nunc finibus elementum suscipit, tortor augue vulputate sapien, vitae feugiat enim augue sed.
+                            Nosso compromisso é com a saúde e felicidade dos animais de estimação e seus tutores. Por isso, estamos constantemente buscando formas de expandir nossos serviços e atender cada vez mais clientes na região, fazendo com que mais pessoas tenham acesso aos nossos serviços e possam contar conosco para cuidar de seus animais.
                         </p>
                         <p>
-                            Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui at sem ullamcorper luctus.
+                            Nosso objetivo é ser referência em cuidados em Guarujá e região, oferecendo serviços de alta qualidade e com preço justo. Queremos ser reconhecidos pelos nossos clientes como um lugar onde podem confiar seus animaizinhos, sabendo que serão tratados com carinho, respeito e profissionalismo. Estamos animados com as possibilidades de expansão e estamos prontos para continuar crescendo e oferecendo o melhor para nossos clientes e seus pets.
                         </p>
                     </div>
                 </div>

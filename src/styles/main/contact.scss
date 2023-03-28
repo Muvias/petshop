@@ -14,8 +14,9 @@
     @media screen and (max-width:1024px) {
         flex-direction: column;
 
-        padding: 0;
-        gap: 0;
+        gap: 64px;
+
+        padding: 80px 24px;
 
         height: 100%;
     }
@@ -34,6 +35,10 @@
             margin-bottom: 12px;
 
             color: $darkColor;
+
+            @media screen and (max-width:1024px) {
+                font-size: 30px;
+            }
         }
 
         p {
@@ -46,6 +51,12 @@
             margin-bottom: 24px;
 
             color: $textColor;
+
+            @media screen and (max-width:1024px) {
+                width: 100%;
+
+                font-size: 16px;
+            }
         }
 
         a {
@@ -82,6 +93,10 @@
 
         gap: 32px;
 
+        @media screen and (max-width:1024px) {
+            width: 100%;
+        }
+
         div {
             display: flex;
             align-items: center;
@@ -98,6 +113,10 @@
                 font-weight: 400;
     
                 color: $textColor;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 16px;
+                }
             }
         }
     }

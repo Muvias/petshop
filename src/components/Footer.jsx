@@ -14,9 +14,9 @@ export function Footer() {
                 </div>
 
                 <div className='socialMedia'>
-                    <Link title='Instagram'><InstagramLogo className='icon' size={30} /></Link>
-                    <Link title='Facebook'><FacebookLogo className='icon' size={30} /></Link>
-                    <Link title='Youtube'><YoutubeLogo className='icon' size={30} /></Link>
+                    <Link to="https://www.instagram.com/li_pethyshop/" target="_blank" title='Instagram'><InstagramLogo className='icon' size={30} /></Link>
+                    <Link to="https://facebook.com/" target="_blank" title='Facebook'><FacebookLogo className='icon' size={30} /></Link>
+                    <Link to="https://youtube.com/" target="_blank" title='Youtube'><YoutubeLogo className='icon' size={30} /></Link>
                 </div>
             </div>
         </footer>

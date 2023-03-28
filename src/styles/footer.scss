@@ -8,7 +8,9 @@ footer {
     background-color: $primaryColor;
 
     @media screen and (max-width:1024px) {
-        padding: 0;
+        height: 100%;
+
+        padding: 64px 24px;
     }
 
     .footerContainer {
@@ -21,6 +23,8 @@ footer {
 
         @media screen and (max-width:1024px) {
             flex-direction: column;
+
+            gap: 32px;
         }
 
         .textContainer {
@@ -38,6 +42,10 @@ footer {
 
                 color: $darkColor;
 
+                @media screen and (max-width:1024px) {
+                    font-size: 21px;
+                }
+
                 span {
                     color: $backgroundColor;
                 }
@@ -53,12 +61,20 @@ footer {
                 margin-bottom: 12px;
 
                 color: $backgroundColor;
+
+                @media screen and (max-width:1024px) {
+                    width: 100%;
+                }
             }
         }
 
         .socialMedia {
             display: flex;
             gap: 32px;
+
+            @media screen and (max-width:1024px) {
+                width: 100%;
+            }
 
             .icon {
                 color: #fff;
